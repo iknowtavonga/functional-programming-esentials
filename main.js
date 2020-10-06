@@ -11,3 +11,10 @@ const array = (...elements) => {
     console.log(elements);
 }
 array('Jonathan', 23, 'basketball');
+
+// Inserting default values on function parameters
+const greet = (name = 'stranger', greeting = 'Wassup?') => {
+    console.log(greeting, name);
+}
+greet();                                                // Calling the function and leaving the default values
+greet('Tavonga');                                       // Inserting the name for a custom greeting
